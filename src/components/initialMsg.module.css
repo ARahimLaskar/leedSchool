@@ -1,0 +1,19 @@
+.resetContainer {
+  margin-top: 4%;
+  box-shadow: rgba(238, 224, 224, 0.16) 0px 1px 4px;
+}
+.resetContainer h1 {
+  color: var(--heading-dark);
+  font-size: 4rem;
+  padding-top: 2rem;
+}
+.resetContainer p {
+  color: var(--hover-color);
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.resetContainer span {
+  font-size: 10rem;
+  color: var(--them-color);
+  padding: 5rem;
+}

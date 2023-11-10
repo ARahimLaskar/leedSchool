@@ -1,0 +1,12 @@
+.noResult_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.noResult_container img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}

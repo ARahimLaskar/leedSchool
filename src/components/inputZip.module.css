@@ -1,0 +1,74 @@
+.input_container {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+#reset_btn {
+  width: 10rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--text);
+  background-color: var(--them-color);
+  transition: 0.2s;
+}
+#reset_btn:hover {
+  border: 1px solid var(--them-color);
+  background-color: transparent;
+}
+.inputBox {
+  position: relative;
+  /* width: 25rem; */
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+
+  box-sizing: "border-box";
+}
+.inputBox input {
+  width: 100%;
+  padding: 1.2rem;
+  border: none;
+  outline: none;
+  color: var(--text);
+  border: 1px solid var(--them-color);
+  font-size: 1.6rem;
+
+  background-color: transparent;
+}
+#span {
+  position: absolute;
+  left: 0;
+  padding: 1rem;
+  pointer-events: none;
+  font-size: 1em;
+  color: var(--text);
+  transition: 0.3s;
+}
+.inputBox input:valid ~ #span,
+.inputBox input:focus ~ #span {
+  color: var(--text);
+  transform: translateX(1rem) translateY(-1rem);
+  font-size: 0.8em;
+  padding: 0 0.4rem;
+  background-color: var(--them-color);
+  border-radius: 3px;
+  letter-spacing: 0.2em;
+}
+
+.inputBox button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  color: var(--text);
+  background-color: var(--them-color);
+}
+.inputBox button:hover {
+  background-color: var(--hover-color);
+}
