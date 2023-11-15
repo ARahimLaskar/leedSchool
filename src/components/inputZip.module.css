@@ -1,6 +1,10 @@
 .input_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 5%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 1rem;
 }
@@ -12,6 +16,8 @@
   cursor: pointer;
   color: var(--text);
   background-color: var(--them-color);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 #reset_btn:hover {
@@ -21,10 +27,14 @@
 .inputBox {
   position: relative;
   /* width: 25rem; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: none;
   border-radius: 5px;
   font-size: 1.6rem;
+
+  -webkit-box-sizing: "border-box";
 
   box-sizing: "border-box";
 }
@@ -46,11 +56,15 @@
   pointer-events: none;
   font-size: 1em;
   color: var(--text);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .inputBox input:valid ~ #span,
 .inputBox input:focus ~ #span {
   color: var(--text);
+  -webkit-transform: translateX(1rem) translateY(-1rem);
+  -ms-transform: translateX(1rem) translateY(-1rem);
   transform: translateX(1rem) translateY(-1rem);
   font-size: 0.8em;
   padding: 0 0.4rem;
@@ -61,10 +75,18 @@
 
 .inputBox button {
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
   color: var(--text);
   background-color: var(--them-color);
